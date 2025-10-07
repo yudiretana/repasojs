@@ -1,59 +1,69 @@
-
 body {
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background: linear-gradient(135deg, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 
-
 .login-container {
-  background-color: white;
-  padding: 30px 40px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  padding: 35px 45px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   width: 320px;
   text-align: center;
 }
 
-
 .login-container h2 {
-  margin-bottom: 20px;
-  color: #333;
+  margin-bottom: 25px;
+  color: #8a2be2;
+  font-weight: bold;
 }
-
 
 input {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin: 10px 0;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  border-radius: 10px;
+  border: 1px solid #d1a3e0;
   font-size: 15px;
+  background-color: #fbe6ff;
+  outline: none;
+  transition: all 0.3s ease;
 }
 
+input:focus {
+  border-color: #b46fd8;
+  box-shadow: 0 0 5px #d67cf4;
+}
 
 button {
   width: 100%;
-  padding: 10px;
-  background-color: #2575fc;
+  padding: 12px;
+  background: linear-gradient(90deg, #c471ed, #f64f59);
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: transform 0.2s, background 0.3s;
 }
 
 button:hover {
-  background-color: #1b5ed3;
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #f64f59, #c471ed);
 }
 
-
 #mensajeError {
-  color: red;
-  margin-top: 10px;
+  color: #ff3b8d;
+  margin-top: 12px;
   font-weight: bold;
+}
+
+.login-container p {
+  color: #6a1b9a;
+  font-size: 16px;
 }
