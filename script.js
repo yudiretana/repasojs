@@ -3,7 +3,7 @@ function validarLogin() {
   const contrasena = document.getElementById("contrasena").value;
   const mensajeError = document.getElementById("mensajeError");
 
-  const usuarioCorrecto = "admin";
+  const usuarioCorrecto = "YudiRetana";
   const contrasenaCorrecta = "12345";
 
   if (usuario === usuarioCorrecto && contrasena === contrasenaCorrecta) {
